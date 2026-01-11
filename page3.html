@@ -1,27 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
-  <title>Home</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <img src="obblogo.webp" alt="obmc" class="logo">
-            <ul class="nav-links">
-                <li><a href="index.html">Programs</a></li>
-                <li><a href="page2.html">Courses</a></li>
-                <li><a href="page3.html">Enroll Now</a></li>
-                <li><a href="page4.html">Contact Us</a></li>
-                <li><a href="page5.html">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
+  <title>Enroll Now | O.B. Montessori Center</title>
 
- <footer>
-        <p>&copy;  © 2025 O.B. Montessori Center. All Rights Reserved.  </p>
-    </footer>
+  <!-- Icons & Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <img src="obblogo.webp" alt="O.B. Montessori Center Logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="index.html">Programs</a></li>
+        <li><a href="page2.html">Courses</a></li>
+        <li><a class="active" href="page3.html">Enroll Now</a></li>
+        <li><a href="page4.html">Contact Us</a></li>
+        <li><a href="page5.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="enroll-hero">
+    <h1>Enroll Now</h1>
+    <p>
+      Begin your child’s Montessori journey with O.B. Montessori Center —<br>
+      nurturing independence, confidence, and lifelong learning.
+    </p>
+  </section>
+
+  <!-- INFO CARDS -->
+  <section class="enroll-info">
+    <div class="info-card">
+      <h3>Programs Offered</h3>
+      <ul>
+        <li>Toddler Program</li>
+        <li>Casa / Primary</li>
+        <li>Elementary</li>
+        <li>Practical Life & Sensorial</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>School Year</h3>
+      <p>
+        Enrollment is open year-round, subject to availability.
+        Classes follow a structured Montessori cycle.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Why OB Montessori?</h3>
+      <p>
+        Established in 1966, OBMC offers a prepared environment
+        that supports academic, social, and emotional growth.
+      </p>
+    </div>
+  </section>
+
+  <!-- ENROLLMENT FORM -->
+  <section class="enroll-form-section">
+    <h2>Enrollment Inquiry Form</h2>
+
+    <form class="enroll-form">
+      <div class="form-row">
+        <input type="text" placeholder="Child's Full Name" required>
+        <input type="number" placeholder="Child's Age" required>
+      </div>
+
+      <div class="form-row">
+        <input type="text" placeholder="Parent / Guardian Name" required>
+        <input type="tel" placeholder="Contact Number" required>
+      </div>
+
+      <input type="email" placeholder="Email Address" required>
+
+      <textarea placeholder="Additional notes or questions"></textarea>
+
+      <button type="submit">Submit Enrollment Inquiry</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 O.B. Montessori Center. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
+
