@@ -1,11 +1,7 @@
-/* General Reset */
 body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(wallpaper.gif);
-    background-size: cover;
-    color: #333;
 }
 
 .h2 {
@@ -33,7 +29,7 @@ body {
 }
 
 .nav-links a {
-    color: rgb(63, 114, 174);
+    color: rgb(35, 80, 131);
     text-decoration: none;
     font-weight: bold;
 }
@@ -74,117 +70,70 @@ body {
     object-fit: cover;
 }
 
-.highlight {
-    color: #E62CC6;
-    font-weight: bold;
-}
-
-/* About, Works, Contact Sections */
-#about, #works, #contact {
-    padding: 5px;
-    max-width: 800px;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.85); /* 85% opaque */
-    margin-top: 20px;
-    border-radius: 10px;
-    text-align: center;
-    animation: slideUp 1.5s ease-out;
-}
-
-/* Works */
-.works-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.work-item {
-    flex: 1 1 45%;
-    text-align: left;
-}
-
-.work-item img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.5s ease;
-}
-
-.work-item img:hover {
-    transform: scale(1.05);
-}
-
-/* Contact Form */
-.form-container {
-      background-color: rgba(255, 255, 255, 0.9); /* slightly transparent */
-      padding: 30px;
-      border-radius: 12px;
-      width: 500px;
-      margin: auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-.formtitle {
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea,
-select {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      box-sizing: border-box;
-    }
-
-textarea {
-      resize: vertical;
-    }
-
-.checkbox-group,
-.radio-group {
-      margin-top: 5px;
-      display: inline-flex;
-    }
-
-.checkbox-group label,
-.radio-group label {
-      font-weight: normal;
-      margin-right: 10px;
-    }
-
-button {
-      margin-top: 20px;
-      background-color: #007bff;
-      color: white;
-      padding: 12px;
-      width: 100%;
-      font-size: 16px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-button:hover {
-      background-color: #0056b3;
-    }
 
 /* Footer */
 footer {
-    background-color: #ccc;
+    background-color: #fff9f9;
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 40px;
+    border: 2px solid rgb(35, 80, 131);
+}
+
+footer p {
+    color: rgb(35, 80, 131);
 }
 
 h2{
-    background-color: #A2AADB;
+    background-color:rgb(35, 80, 131);
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+.video {
+    text-align: center;
+    margin: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card p {
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(35, 80, 131);
+}
+.campuses, .grades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+
+@media(max-width: 600px){
+    .campuses, .grades {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ================= Animations ================= */
@@ -208,3 +157,4 @@ h2{
   from { transform: rotate(-360deg) scale(0); opacity: 0; }
   to { transform: rotate(0) scale(1); opacity: 1; }
 }
+
