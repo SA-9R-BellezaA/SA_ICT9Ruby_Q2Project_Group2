@@ -1,15 +1,32 @@
-/* General Reset */
+
 body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     margin: 0;
     padding: 0;
 }
 
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("obmcbg.png"); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    opacity: 0.4; 
+    z-index: -1;
+}
+
 .h2 {
     background-color: #3D215C;
 }
 
-/* Navbar */
+
 .navbar {
     background-color: #ffffff;
     color: white;
@@ -20,7 +37,7 @@ body {
 
 .navbar .logo {
     height: 50px;
-    animation: spinIn 1s ease-out; /* animate logo */
+    animation: spinIn 1s ease-out; 
 }
 
 .nav-links {
@@ -35,7 +52,7 @@ body {
     font-weight: bold;
 }
 
-/* Hero Section */
+
 .hero {
   position: relative;
   text-align: center;
@@ -50,12 +67,12 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* black overlay */
+  background: rgba(0, 0, 0, 0.5); 
 }
 
 .hero * {
   position: relative;
-  z-index: 1; /* keep text above the overlay */
+  z-index: 1; 
 }
 
 .hero h1, 
@@ -72,7 +89,7 @@ body {
 }
 
 
-/* Footer */
+
 footer {
     background-color: #fff9f9;
     color: white;
@@ -131,6 +148,8 @@ h2{
 }
 
 
+
+
 @media(max-width: 600px){
     .campuses, .grades {
         grid-template-columns: 1fr;
@@ -158,5 +177,3 @@ h2{
   from { transform: rotate(-360deg) scale(0); opacity: 0; }
   to { transform: rotate(0) scale(1); opacity: 1; }
 }
-
-
